@@ -6,7 +6,7 @@
         <p v-if="description" class="mt-6 text-base leading-7 text-zinc-600 dark:text-zinc-500">{{ description }}</p>
         <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
           <li v-for="feature in includedFeatures" :key="feature" class="flex gap-x-2">
-            <Icon name="heroicons:check" class="h-6 w-5 flex-none text-yellow-600" />
+            <!-- <Icon name="heroicons:check" class="h-6 w-5 flex-none text-yellow-600" /> -->
             {{ feature }}
           </li>
         </ul>

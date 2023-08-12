@@ -86,7 +86,7 @@ const defaultImage = "img/placeholder.jpg";
       </div>
 
       <!-- col3 -->
-      <div class="flex flex-col gap-5 sm:gap-6" v-parallax data-rellax-speed="0">
+      <!-- <div class="flex flex-col gap-5 sm:gap-6" v-parallax data-rellax-speed="0">
         <div class="relative aspect-[2/3] w-72 md:w-80 lg:w-96 flex-none overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-800">
           <NuxtImg
             placeholder
@@ -100,7 +100,7 @@ const defaultImage = "img/placeholder.jpg";
             loading="lazy"
           />
         </div>
-      </div>
+      </div> -->
 
       <!-- col4 -->
       <div class="flex flex-col gap-5 sm:gap-6" v-parallax data-rellax-speed="1">

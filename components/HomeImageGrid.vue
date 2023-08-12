@@ -26,7 +26,7 @@
       >
         <NuxtImg
           placeholder
-          sizes="sm:100vw md:50vw lg:220px"
+          sizes="sm:100vw md:100vw lg:220px"
           class="absolute inset-0 h-full w-full object-cover"
           src="/img/home/grid-02.jpg"
           alt="Alt text"
