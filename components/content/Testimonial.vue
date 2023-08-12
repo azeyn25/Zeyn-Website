@@ -16,8 +16,8 @@ defineProps({
 });
 </script>
 
-<template>
-  <div class="pt-8 sm:inline-block sm:w-full sm:px-4">
+<!-- <template> -->
+  <!-- <div class="pt-8 sm:inline-block sm:w-full sm:px-4">
     <figure class="rounded-2xl bg-zinc-50 dark:bg-zinc-800/5 p-6 text-sm leading-6 dark:border dark:border-zinc-800/50">
       <blockquote class="text-zinc-900 dark:text-zinc-400">
         <p>“{{ quote }}”</p>
@@ -28,4 +28,4 @@ defineProps({
       </figcaption>
     </figure>
   </div>
-</template>
+</template> -->

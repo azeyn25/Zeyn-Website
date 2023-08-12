@@ -9,10 +9,10 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
         <span class="text-base font-semibold leading-7">
             <slot name="question" />
         </span>
-        <span class="ml-6 flex h-7 items-center">
+        <!-- <span class="ml-6 flex h-7 items-center">
           <Icon name="heroicons:plus-small" v-if="!open" class="h-6 w-6" />
           <Icon name="heroicons:minus-small" v-else class="h-6 w-6" />
-        </span>
+        </span> -->
       </DisclosureButton>
     </dt>
     <DisclosurePanel as="dd" class="mt-2 pr-12">
