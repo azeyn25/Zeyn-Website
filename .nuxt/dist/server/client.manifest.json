@@ -1,5 +1,6 @@
 {
   "@vite/client": {
+    "prefetch": true,
     "isEntry": true,
     "file": "@vite/client",
     "css": [],
@@ -9,6 +10,8 @@
   "/Users/abdullahzeyn/code/azeyn25/Zeyn-Website/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
+    "prefetch": true,
+    "preload": true,
     "isEntry": true,
     "file": "/Users/abdullahzeyn/code/azeyn25/Zeyn-Website/node_modules/nuxt/dist/app/entry.js"
   }
