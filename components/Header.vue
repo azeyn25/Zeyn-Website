@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const links = [
 
-  { name: "Personal Projects", to: "/personalprojects" },
-  { name: "Archive", to: "/" },
-  { name: "Prints", to: "/prints" },
-  { name: "Zeyn", to: "/zeyn" },
+{ name: "Home", to: "/" },
+{ name: "Personal Projects", to: "/personalprojects" },
+//  { name: "Prints", to: "/prints" },
+  { name: "About", to: "/about" },
 ] as { name: string; to: string }[];
 
 onMounted(() => {

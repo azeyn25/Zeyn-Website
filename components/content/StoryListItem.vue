@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Image } from "~~/../types/image";
 
 type Story = {
   _path: string;
@@ -31,7 +30,7 @@ defineProps({
     >
       <NuxtImg
         :src="story.cover?.src || 'img/placeholder.jpg'"
-        :alt="story.cover?.alt || story.title" 
+        :alt="story.cover?.alt || story.title"
         :width="story.cover?.width || 2"
         :height="story.cover?.height || 3"
         class="h-full w-full object-cover object-center group-hover:opacity-75"
