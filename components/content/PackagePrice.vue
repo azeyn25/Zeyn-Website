@@ -18,7 +18,7 @@
       <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-sm lg:flex-shrink-0">
         <div class="relative overflow-hidden rounded-2xl py-10 text-center ring-1 ring-inset ring-zinc-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16 lg:h-full bg-zinc-200 dark:bg-zinc-800">
           <div v-if="image" class="absolute inset-0">
-            <NuxtImg :src="image.src" :alt="image.alt" :width="image.width" :height="image.height" class="w-full h-full object-cover" />
+            <NuxtImg :src="image.src" :alt="image.alt" :width="image.width" :height="image.height" class="photo w-full h-full object-cover" />
           </div>
           <div class="mx-auto max-w-xs px-8 z-10">
             <p class="flex items-baseline justify-center gap-x-2">
