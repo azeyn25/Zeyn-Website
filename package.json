@@ -1,71 +1,71 @@
 {
-  "name": "maya-nuxt3-photography-portfolio",
-  "private": true,
-  "version": "0.1.0",
-  "main": "nuxt.config.ts",
-  "license": "MIT",
-  "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "generate": "nuxi generate",
-    "preview": "nuxi preview",
-    "lint": "eslint .",
-    "prepublishOnly": "pnpm lint",
-    "release": "release-it"
-  },
-  "files": [
-    "app/",
-    "assets/",
-    "components/",
-    "composables/",
-    "layouts/",
-    "utils/",
-    "app.vue",
-    "app.config.ts",
-    "nuxt.config.ts",
-    "tailwind.config.cjs"
-  ],
-  "dependencies": {
-    "@headlessui/vue": "^1.7.10",
-    "@heroicons/vue": "^2.0.16",
-    "@nuxt/content": "^2.4.3",
-    "@nuxthq/studio": "^0.7.5",
-    "@vueuse/core": "^9.13.0",
-    "@vueuse/nuxt": "^9.13.0",
-    "photoswipe": "^5.3.5",
-    "rellax": "^1.12.1",
-    "ufo": "^1.1.0"
-  },
-  "devDependencies": {
-    "@nuxt/eslint-config": "^0.1.1",
-    "@nuxt/image-edge": "^1.3.0-28493895.369b747",
-    "@nuxtjs/color-mode": "^3.2.0",
-    "@nuxtjs/tailwindcss": "^6.4.1",
-    "@tailwindcss/typography": "^0.5.9",
-    "@types/rellax": "^1.7.4",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8.34.0",
-    "nuxt": "^3.2.2",
-    "nuxt-icon": "^0.3.2",
-    "postcss": "^8.4.39",
-    "release-it": "^16.1.2",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^4.9.5",
-    "vue": "^3.2.47"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "axios": "0.25.0",
-        "vue": "^3.0.0"
-      },
-      "ignoreMissing": [
-        "postcss",
-        "postcss-*",
-        "webpack",
-        "axios"
-      ]
-    }
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+    "name": "A. Zeyn Photography",
+    "private": true,
+    "version": "0.1.0",
+    "main": "nuxt.config.ts",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nuxi dev",
+        "build": "nuxi build",
+        "generate": "nuxi generate",
+        "preview": "nuxi preview",
+        "lint": "eslint .",
+        "prepublishOnly": "pnpm lint",
+        "release": "release-it"
+    },
+    "files": [
+        "app/",
+        "assets/",
+        "components/",
+        "composables/",
+        "layouts/",
+        "utils/",
+        "app.vue",
+        "app.config.ts",
+        "nuxt.config.ts",
+        "tailwind.config.cjs"
+    ],
+    "dependencies": {
+        "@headlessui/vue": "^1.7.10",
+        "@heroicons/vue": "^2.0.16",
+        "@nuxt/content": "^2.4.3",
+        "@nuxthq/studio": "^0.7.5",
+        "@vueuse/core": "^9.13.0",
+        "@vueuse/nuxt": "^9.13.0",
+        "photoswipe": "^5.3.5",
+        "rellax": "^1.12.1",
+        "ufo": "^1.1.0"
+    },
+    "devDependencies": {
+        "@nuxt/eslint-config": "^0.1.1",
+        "@nuxt/image-edge": "^1.3.0-28493895.369b747",
+        "@nuxtjs/color-mode": "^3.2.0",
+        "@nuxtjs/tailwindcss": "^6.4.1",
+        "@tailwindcss/typography": "^0.5.9",
+        "@types/rellax": "^1.7.4",
+        "autoprefixer": "^10.4.19",
+        "eslint": "^8.34.0",
+        "nuxt": "^3.2.2",
+        "nuxt-icon": "^0.3.2",
+        "postcss": "^8.4.39",
+        "release-it": "^16.1.2",
+        "tailwindcss": "^3.4.4",
+        "typescript": "^4.9.5",
+        "vue": "^3.2.47"
+    },
+    "pnpm": {
+        "peerDependencyRules": {
+            "allowedVersions": {
+                "axios": "0.25.0",
+                "vue": "^3.0.0"
+            },
+            "ignoreMissing": [
+                "postcss",
+                "postcss-*",
+                "webpack",
+                "axios"
+            ]
+        }
+    },
+    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
