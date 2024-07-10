@@ -144,6 +144,8 @@ const _inlineRuntimeConfig = {
       },
       "navigation": {
         "fields": [
+          "layout",
+          "layout",
           "layout"
         ]
       },
@@ -257,6 +259,8 @@ const _inlineRuntimeConfig = {
     },
     "navigation": {
       "fields": [
+        "layout",
+        "layout",
         "layout"
       ]
     },
