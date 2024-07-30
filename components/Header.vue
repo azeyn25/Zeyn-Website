@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+
 const links = [
   { name: "Home", to: "/", newTab: false },
   { name: "Prints", to: "https://abdullahzeyn.darkroom.com/", newTab: true },
@@ -18,18 +20,13 @@ const lastScrollPosition = ref(0);
 const onScroll = () => {
   const currentScrollPosition =
     window.pageYOffset || document.documentElement.scrollTop;
-  // Momentum scrolling on iOS can cause the scroll position to be negative
   if (currentScrollPosition < 0) return;
-
-  // add 60px delay
   if (Math.abs(currentScrollPosition - lastScrollPosition.value) < 60) return;
-
-  // show if scrolling up
   showHeader.value = currentScrollPosition < lastScrollPosition.value;
-
   lastScrollPosition.value = currentScrollPosition;
 };
 </script>
+
 <template>
   <div
     :class="[
