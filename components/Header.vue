@@ -4,7 +4,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 const links = [
   { name: "Home", to: "/", newTab: false },
   { name: "Prints", to: "https://abdullahzeyn.darkroom.com/", newTab: true },
-  { name: "About", to: "/about", newTab: false },
+  { name: "Archive", to: "/Archive", newTab: false },
 ] as { name: string; to: string; newTab: boolean }[];
 
 onMounted(() => {
