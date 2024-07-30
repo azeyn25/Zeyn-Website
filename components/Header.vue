@@ -1,11 +1,9 @@
 <script setup lang="ts">
 const links = [
-
-{ name: "Home", to: "/" },
-{ name: "Prints", to: "/prints" },
-//  { name: "Prints", to: "/prints" },
-  { name: "About", to: "/about" },
-] as { name: string; to: string }[];
+  { name: "Home", to: "/", newTab: false },
+  { name: "Prints", to: "https://abdullahzeyn.darkroom.com/", newTab: true },
+  { name: "About", to: "/about", newTab: false },
+] as { name: string; to: string; newTab: boolean }[];
 
 onMounted(() => {
   window.addEventListener("scroll", onScroll);

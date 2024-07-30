@@ -1,21 +1,22 @@
-<script setup lang="ts">
-const { links } = defineProps<{
-  links: { name: string; to: string }[];
-}>();
-</script>
-
 <template>
-  <ul class="flex items-center gap-4">
-    <NuxtLink
-      :to="link.to"
-      :class="[
-        $route.path === link.to? 'text': 'text-zinc-700 dark:text-zinc-400',
-        'px-2 hover:text-zinc-900 dark:hover:text-zinc-200'
-      ]"
-      v-for="(link, index) in links"
-      :key="`navlinks-${index}`"
-    >
-      {{ link.name }}
-    </NuxtLink>
-  </ul>
+  <nav>
+    <ul class="flex space-x-4">
+      <li v-for="link in links" :key="link.name">
+        <a
+          :href="link.to"
+          :target="link.newTab ? '_blank' : undefined"
+          :rel="link.newTab ? 'noopener noreferrer' : undefined"
+          class="text-sm font-medium text-zinc-800 dark:text-zinc-200 hover:text-zinc-600 dark:hover:text-zinc-400"
+        >
+          {{ link.name }}
+        </a>
+      </li>
+    </ul>
+  </nav>
 </template>
+
+<script setup lang="ts">
+defineProps<{
+  links: Array<{ name: string; to: string; newTab: boolean }>;
+}>()
+</script>
