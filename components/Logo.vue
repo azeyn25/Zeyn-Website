@@ -5,12 +5,12 @@
   >
     <div class="rounded-full border-2 border-white dark:border-zinc-400 shadow-md group-hover:shadow-xl transition-shadow duration-100 shrink-0">
       <NuxtImg
-        class="inline-block h-14 w-14 rounded-full"
+        class="inline-block h-20 w-20 rounded-full"
         src="/img/Zeynlogo.jpg"
         alt="Abdullah Zeyn"
         format="webp"
-        width="100"
-        height="100"
+        width="150"
+        height="150"
       />
     </div>
     <span class="uppercase tracking-widest hidden md:inline-flex shrink-1 sr-only">Oscar Mattern</span>

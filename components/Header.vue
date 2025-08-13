@@ -3,8 +3,8 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const links = [
   { name: "Home", to: "/", newTab: false },
-  { name: "Archive", to: "/archive", newTab: false },
-  { name: "Prints", to: "https://abdullahzeyn.darkroom.com/", newTab: true },
+  { name: "Gallery", to: "/gallery", newTab: false },
+  { name: "About", to: "/about", newTab: false },
 
 ] as { name: string; to: string; newTab: boolean }[];
 
@@ -39,9 +39,9 @@ const onScroll = () => {
       <div class="flex items-center justify-between">
         <Logo />
         <div
-          class="border border-zinc-300/50 dark:border-zinc-900/60 rounded-full pl-2 lg:pl-4 pr-2 py-2 backdrop-blur-lg bg-zinc-100/50 dark:bg-zinc-800/50"
+          class="border border-zinc-300/50 dark:border-zinc-900/60 rounded-full pl-3 lg:pl-6 pr-3 py-3 backdrop-blur-lg bg-zinc-100/50 dark:bg-zinc-800/50"
         >
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-6">
             <div class="hidden lg:block">
               <NavLinks :links="links" />
             </div>
