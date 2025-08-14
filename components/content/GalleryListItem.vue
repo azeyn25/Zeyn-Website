@@ -5,6 +5,8 @@ type Gallery = {
   title: string;
   description?: string;
   cover?: Image;
+  images?: Image[];
+  body?: any;
 };
 
 const props = defineProps({
@@ -18,11 +20,22 @@ const props = defineProps({
       return false;
     },
   },
+  enableShopping: {
+    type: [Boolean, String],
+    default: false,
+  },
 });
+
+const router = useRouter()
+
+const handleClick = (event: Event) => {
+  event.preventDefault()
+  router.push(props.gallery._path)
+}
 </script>
 
 <template>
-  <NuxtLink :to="gallery._path" class="group">
+  <div class="group cursor-pointer" @click="handleClick">
     <div
       class="relative w-full overflow-hidden rounded-lg aspect-[3/2] md:aspect-[2/3] dark:bg-zinc-800"
     >
@@ -53,10 +66,8 @@ const props = defineProps({
         </div>
       </div>
     </div>
-    <div
-      class="mt-4 flex items-center justify-between text-base font-medium dark:text-zinc-200"
-    >
-      <h3>{{ gallery.title }}</h3>
+    <div class="mt-4 text-center">
+      <h3 class="text-base font-medium dark:text-zinc-200">{{ gallery.title }}</h3>
     </div>
-  </NuxtLink>
+  </div>
 </template>

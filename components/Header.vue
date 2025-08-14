@@ -5,7 +5,6 @@ const links = [
   { name: "Home", to: "/", newTab: false },
   { name: "Gallery", to: "/gallery", newTab: false },
   { name: "About", to: "/about", newTab: false },
-
 ] as { name: string; to: string; newTab: boolean }[];
 
 onMounted(() => {

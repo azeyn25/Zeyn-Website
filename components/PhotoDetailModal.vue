@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Product, PrintSize, PrintMaterial } from '~/types/product'
 import { PRINT_SIZES, PRINT_MATERIALS } from '~/types/product'
+import { useCartStore } from '~/stores/cart'
 
 interface Props {
   product: Product | null
@@ -105,14 +106,44 @@ watch(() => props.isOpen, (isOpen) => {
             </div>
           </div>
 
-          <!-- Details Section - SIMPLE -->
-          <div class="space-y-6">
+          <!-- Details Section - RICH -->
+          <div class="space-y-6 overflow-y-auto">
             
+            <!-- Meta Information -->
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div v-if="product.location">
+                <span class="text-gray-500 dark:text-gray-400">Location:</span>
+                <p class="font-medium">{{ product.location }}</p>
+              </div>
+              <div v-if="product.year">
+                <span class="text-gray-500 dark:text-gray-400">Year:</span>
+                <p class="font-medium">{{ product.year }}</p>
+              </div>
+              <div v-if="product.edition">
+                <span class="text-gray-500 dark:text-gray-400">Edition:</span>
+                <p class="font-medium">{{ product.edition }}</p>
+              </div>
+              <div v-if="product.camera">
+                <span class="text-gray-500 dark:text-gray-400">Capture:</span>
+                <p class="font-medium">{{ product.camera }}</p>
+              </div>
+            </div>
+
             <!-- Description -->
-            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-              This exceptional piece captures authentic moments through masterful composition. 
-              Produced using museum-quality archival materials for collectors who appreciate exceptional craftsmanship.
-            </p>
+            <div v-if="product.description">
+              <h3 class="font-semibold text-gray-900 dark:text-white mb-2">About This Piece</h3>
+              <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                {{ product.description }}
+              </p>
+            </div>
+
+            <!-- Story -->
+            <div v-if="product.story">
+              <h3 class="font-semibold text-gray-900 dark:text-white mb-2">The Story</h3>
+              <p class="text-gray-600 dark:text-gray-300 leading-relaxed italic">
+                {{ product.story }}
+              </p>
+            </div>
 
             <!-- Size Selection -->
             <div>

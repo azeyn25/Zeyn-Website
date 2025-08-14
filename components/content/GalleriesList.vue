@@ -6,12 +6,24 @@ const props = defineProps({
     type: String,
     default: "galleries",
   },
+  enableShopping: {
+    type: [Boolean, String],
+    default: false,
+  },
 });
 
 const { data: _galleries } = await useAsyncData(
   "galleries",
-  async () =>
-    await queryContent(withTrailingSlash(props.path)).find()
+  async () => {
+    const galleries = await queryContent(withTrailingSlash(props.path))
+      .where({ _partial: false })
+      .find()
+    
+    return galleries.map(gallery => ({
+      ...gallery,
+      images: []
+    }))
+  }
 );
 
 const galleries = computed(() => _galleries.value || [])
@@ -24,6 +36,7 @@ const galleries = computed(() => _galleries.value || [])
         v-for="(gallery, index) in galleries"
         :key="index"
         :gallery="gallery"
+        :enable-shopping="enableShopping"
       />
     </div>
     <div v-else>

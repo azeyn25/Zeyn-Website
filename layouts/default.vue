@@ -36,6 +36,9 @@
 
     <!-- footer -->
     <Footer class="mt-auto" />
+
+    <!-- Floating Cart Button -->
+    <FloatingCartButton />
   
   </article>
 </template>

@@ -23,6 +23,9 @@ export default defineNuxtConfig({
 
     // Doc: https://github.com/nuxt-modules/icon
     "nuxt-icon",
+
+    // Doc: https://pinia.vuejs.org/ssr/nuxt.html
+    "@pinia/nuxt",
   ],
 
   /**
@@ -66,4 +69,14 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: "2024-07-10",
+
+  runtimeConfig: {
+    // Private keys (only available on server-side)
+    stripeSecretKey: process.env.STRIPE_SECRET_KEY,
+    
+    // Public keys (exposed to client-side)
+    public: {
+      stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY || process.env.NUXT_STRIPE_PUBLISHABLE_KEY,
+    }
+  },
 });

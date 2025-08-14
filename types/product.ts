@@ -17,6 +17,11 @@ export interface Product {
   title: string;
   slug: string;
   description?: string;
+  story?: string; // The story behind the photograph
+  location?: string; // Where the photo was taken
+  year?: string; // When the photo was taken
+  camera?: string; // Camera/technical details
+  edition?: string; // Edition information
   image: {
     src: string;
     alt: string;
@@ -24,7 +29,10 @@ export interface Product {
     height: number;
   };
   gallery?: string; // Gallery slug if part of a collection
-  limitedEdition?: boolean;
+  limitedEdition?: {
+    total: number;
+    remaining: number;
+  } | null;
   tags?: string[];
   featured?: boolean;
   createdAt: string;
