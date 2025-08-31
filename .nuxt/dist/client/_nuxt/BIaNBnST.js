@@ -1,1 +1,0 @@
-import{g as e}from"./D1pFadSD.js";const a=e({__name:"Testimonial",props:{quote:{type:String,required:!1},name:{type:String,required:!1},image:{type:Object,required:!1}},setup(r){return()=>{}}});export{a as default};

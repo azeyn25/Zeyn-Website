@@ -1,1 +1,0 @@
-import{_ as o}from"./DlAUqK2U.js";import{o as c,c as n,a as t,J as e}from"./D1pFadSD.js";const r={},a={class:"mt-24"},i={class:"text-center"},m={class:"not-prose -mt-8 sm:-mx-4 sm:columns-2 sm:text-[0]"};function l(s,_){return c(),n("div",a,[t("div",i,[e(s.$slots,"title")]),t("div",m,[e(s.$slots,"items")])])}const p=o(r,[["render",l]]);export{p as default};
